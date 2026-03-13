@@ -4,28 +4,29 @@ void main() => runApp(MaterialApp(
   home: Scaffold(
     appBar: AppBar(
       title: Text("Calculator App",
-      style:TextStyle(
+        style:TextStyle(
         fontWeight: FontWeight(10),
-      ),
+        ),
       ),
       backgroundColor: Colors.grey,
     ),
     
     body: Center(
       child: Container(
-        width: 350,
+        
         color: Colors.brown[300],
         child: Column(
           children: [
-            
+            SizedBox(height:20),
             Row(
+              
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(onPressed: null,
                 child: Text("Converter"),
                 ),
                 ElevatedButton(onPressed: null,
-                child: Text("Symbols"),
+                child: Text("History"),
                 ),
                 ElevatedButton(onPressed: null,
                 child: Text("History"),
